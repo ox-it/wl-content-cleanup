@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.ac.ox.oucs.vle</groupId>
   <artifactId>content-cleanup</artifactId>
@@ -29,7 +30,16 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-
+  <distributionManagement>
+    <repository>
+      <id>maven-repo.oucs</id>
+      <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/releases</url>
+    </repository>
+  </distributionManagement>
+  <scm>
+    <connection>scm:git:git://git-repo.oucs.ox.ac.uk/git/repos/local-project/content-cleanup</connection>
+    <developerConnection>scm:git:ssh://git-repo.oucs.ox.ac.uk/~git/repos/local-project/content-cleanup</developerConnection>
+  </scm>
   <dependencyManagement>
     <dependencies>
       <dependency>
