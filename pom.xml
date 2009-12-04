@@ -34,6 +34,10 @@
       <id>maven-repo.oucs</id>
       <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/releases</url>
     </repository>
+    <snapshotRepository>
+      <id>maven-repo.oucs</id>
+      <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
   <scm>
     <connection>scm:git:git://git-repo.oucs.ox.ac.uk/git/repos/local-project/content-cleanup</connection>
