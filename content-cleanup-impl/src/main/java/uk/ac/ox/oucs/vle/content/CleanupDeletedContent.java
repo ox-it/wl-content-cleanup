@@ -65,7 +65,7 @@ public class CleanupDeletedContent implements Job {
 		Time oldest = ts.newTime(System.currentTimeMillis()
 				- (daysToKeep * 1000 * 60 * 60 * 24));
 		log.info("Looking at " + deleted.size()
-				+ " resources, and removing anything older than: " + oldest);
+				+ " resources, and removing anything older than: " + oldest.toStringLocalDate());
 		int removed = 0, attempted = 0;
 		long totalSize = 0, removedSize = 0;
 		for (ContentResource resource : deleted) {
