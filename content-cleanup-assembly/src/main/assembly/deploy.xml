@@ -22,7 +22,7 @@
       <unpack>false</unpack>
     </dependencySet>
     <dependencySet>
-      <outputDirectory>commponents/${artifact.artifactId}</outputDirectory>
+      <outputDirectory>components/${artifact.artifactId}</outputDirectory>
       <includes>
 	<include>*:sakai-component:*</include>
       </includes>
