@@ -86,9 +86,8 @@ public class CleanupDeletedContent implements Job {
 						log.warn("Failed to remove due to lack of permission: "
 								+ resource.getId());
 					} catch (IdUnusedException e) {
-						log
-								.warn("Failed to remove due to not beging able to find: "
-										+ resource.getId());
+						log.warn("Failed to remove due to not beging able to find: "
+								+ resource.getId());
 					} catch (TypeException e) {
 						log.warn("Failed to remove due to type exception: "
 								+ resource.getId());
